@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+	<meta name="description" content="Calcular la ley de coulomb">
+	<meta name="author" content="Michaell Nay MO">
+	<meta name="theme-color" content="content">
+	<title>Forline</title>
+	<link rel="stylesheet" href="L.css">
+	
+</head>
+<center>
+	
+<body>
+	<header id="header">
+	</header>
+
+<div class="row">
+	<main class="feed">
+	<section class="photo">
+		
+	
+<h2>Calcular la fuerza de dos cargas (LEY DE COULOMB)</h2>
+<form>
+ CARGA Q1:<br>
+ <input class="input" type="text" id="t1">
+ <br>
+ Carga Q2:<br>
+ <input class="input" type="text" id="t2">
+ <br>
+ DISTANCIA:<br>
+ <input class="input" type="text" id="t3">
+ <br><br>
+ <input  class="btncalcular"  type="button" value="Calcular" onclick="Calcular();">
+ <button type="reset" role="button">borrar</button>
+</form> 
+<br>
+<textarea id="promedio" class="textarea"></textarea>
+
+</section>
+</main>
+</div>
+</body>
+</center>
+<script>
+
+ function Calcular() {
+ 	const C = 8.9;
+ var vr1 = document.getElementById('t1').value;
+ var vr2 = document.getElementById('t2').value;
+ var vr3 = document.getElementById('t3').value;
+ var p = parseFloat(C)*((parseFloat(vr1)*parseFloat(vr2))/(parseFloat(vr3)*parseFloat(vr3)));
+ 
+ document.getElementById('promedio').innerHTML = p;
+ }
+</script>
+</html>
+
+
+
+
+<!--
+
+// Constante de Euler
+console.info( Math.E ); // ~2.718
+ 
+// Logaritmo de 2
+console.info( Math.LN2 );  // ~0.693
+ 
+// Logaritmo de 10
+console.info( Math.LN10 ); // ~2.302
+ 
+// Logaritmo de E en base 2
+console.info( Math.LOG2E ); // ~1.442
+ 
+// Logaritmo de E en base 10
+console.info( Math.LOG10E );  // ~0.434
+ 
+// PI
+console.info( Math.PI ); // ~3.14159
+ 
+// Raíz cuadrada de 2
+console.info( Math.SQRT2 ); // ~1.414
+ 
+// Raíz cuadrada de 1/2
+console.info( Math.SQRT1_2 );  // ~0.707
+--->
